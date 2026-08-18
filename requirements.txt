@@ -1,0 +1,8 @@
+opencv-python>=4.9,<5
+mediapipe>=0.10,<0.11
+numpy>=1.26,<2.0
+
+# macOS only: lets main.py resolve the correct camera by name (AVFoundation),
+# working around Continuity Camera taking over the built-in webcam's index.
+pyobjc-framework-AVFoundation; sys_platform == "darwin"
+pyobjc-framework-CoreMedia; sys_platform == "darwin"
